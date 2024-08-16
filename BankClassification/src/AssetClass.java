@@ -10,25 +10,16 @@ public class AssetClass {
     if (yourTotalAverageAsset >= 8000000) {
       System.out.println("Good Morning" + yourName + ". Welcome to HSBC, you are now upgraded to Premier Elite");
       
-    } else if (yourTotalAverageAsset >= 1000000) {
+    } if (yourTotalAverageAsset >= 1000000) {
       System.out.println("Good Morning" + yourName + ". Welcome to HSBC, you are now upgraded to Premier");
       
-    } else  {
+    } if (yourTotalAverageAsset < 1000000){
       System.out.println("Good Morning" + yourName + ". Welcome to HSBC, you are our Advanced Customer");
-      
-     }
-
-
-     
-// Boolean Version
-
-Boolean result = yourTotalAverageAsset >= 8000000;
-if (result = true) {
-  System.out.println("Good Morning" + yourName + ". Welcome to HSBC, you are now upgraded to Premier Elite");
-    } else {
-      System.out.println("Good Morning" + yourName + ". Sorry your are not eligible to upgrade as Premier Elite");
     }
+    
+     CustomerData cm1 = new CustomerData("Kashing", "Lee", 1000000000);
+     System.out.println(cm1.qualifaction());
+}
 
 
   }
-}
